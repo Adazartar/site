@@ -1,0 +1,37 @@
+
+body {
+    background-color: #1F2022;
+}
+
+.choices {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: monospace;
+}
+
+.playerScore, .computerScore {
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.results, .score {
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    padding: 30px;
+}
+
+button {
+    border: 4px bold white;
+    background-color: #1F2022;
+    padding: 20px;
+    margin: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
