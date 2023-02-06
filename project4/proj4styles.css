@@ -2,7 +2,7 @@
 .grid-container {
   display: grid;
   column-gap: 10px;
-  row-gap: 10px;
+  row-gap: 20px;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   background-colour: grey;
   padding: 5px;
@@ -15,4 +15,8 @@
   text-align: center; 
   background-color: rgba(255, 255, 255, 0.8);
 }
-  
+
+input {
+  width: 50px;
+}
+   
