@@ -22,5 +22,6 @@ input {
    
 .top-row {
   top: 0;
-  position: absolute;
+  position: sticky;
+  width: 100%;
 }
