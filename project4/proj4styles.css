@@ -20,3 +20,7 @@ input {
   width: 50px;
 }
    
+.top-row {
+  top: 0;
+  position: sticky;
+}
