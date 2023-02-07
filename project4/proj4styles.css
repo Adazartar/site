@@ -7,8 +7,8 @@
   grid-template-columns: auto auto auto auto auto auto auto auto;
   background-colour: grey;
   padding: 5px;
-  /*top: 0;
-  position: sticky;*/
+  top: 0;
+  position: sticky;
 }
 
 .grid-container {
