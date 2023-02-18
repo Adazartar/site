@@ -5,7 +5,6 @@
   column-gap: 10px;
   row-gap: 20px;
   grid-template-columns: auto auto auto auto auto auto auto auto;
-  background-colour: grey;
   padding: 5px;
 }  
   
