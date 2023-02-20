@@ -44,6 +44,8 @@ body {
     color: #444444;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    /*line-height: 100px;*/
 }
 
 .footer {
@@ -51,17 +53,6 @@ body {
     background-color: #82adb9;
 }
 
-.projectlist {
-    height: 900px;
-    display: flex;
-    background-color: #cddee3;
-    font-size: 60px;
-    font-weight: 800;
-    color: #444444;
-    align-items: center;
-    justify-content: center;
-    line-height: 100px;
-}
 
 ul {
     list-style: none;
