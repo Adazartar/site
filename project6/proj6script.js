@@ -405,6 +405,7 @@ function battle(f1, f2){
             continueButton.style.display = "initial";
             logText.innerHTML += `no more fighters left, game over<br>`
             score = 0;
+            scoreText.innerHTML = `score: ${score}`;
             fighters.splice(0,1);
         }
         else{
