@@ -1,0 +1,107 @@
+
+body {
+    background-color: #1F2022;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.fighters {
+    display: flex;
+    height: 40vh;
+}
+
+.pick1 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #18191b;
+    width: 22vw;
+    height: 35vh;
+    max-height: 400px;
+    box-shadow: 2px 2px black;
+}
+
+.pick2 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #18191b;
+    width: 22vw;
+    height: 35vh;
+    max-height: 400px;
+    max-height: 400px;
+    box-shadow: 2px 2px black;
+
+}
+
+.pick3 {
+    padding: 10px;
+    margin: 10px;
+    background-color: #18191b;
+    width: 22vw;
+    height: 35vh;
+    max-height: 400px;
+    max-height: 400px;
+    box-shadow: 2px 2px black;
+
+}
+
+.split {
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.enemy {
+    padding: 10px;
+    margin: 10px;
+    background-color: #18191b;
+    width: 22vw;
+    height: 35vh;
+    max-height: 400px;
+    max-height: 400px;
+    box-shadow: 2px 2px black;
+
+}
+
+.score {
+    background-color: #1F2022;
+    width: 200px;
+    height: 200px;
+    text-align: right;
+}
+
+.textbox {
+    background-color: #0c0d0d;
+    width: auto;
+    height: 40vh;
+    margin: 2vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    overflow-anchor: "initial";
+}
+
+.textbox.locked-to-bottom {
+    scroll-behavior: smooth;
+    scroll-margin-bottom: 9999px;
+}
+
+.buttons {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: 4px bold white;
+    background-color: #1F2022;
+    padding: 20px;
+    margin: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
