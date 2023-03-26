@@ -673,7 +673,9 @@ catchButton.addEventListener('click',() => {
                     swapButton.style.display = "none";
                     catchButton.style.display = "none";
                     continueButton.style.display = "initial";
-                    logText.innerHTML += `no more fighters left, game over`
+                    logText.innerHTML += `no more fighters left, game over`;
+                    score = 0;
+                    scoreText.innerHTML = `score: ${score}`;
                     fighters.splice(0,1);
                 }
                 else{
