@@ -369,13 +369,21 @@ class Fighter{
         this.chargeChance = 0
         this.speed = 0
         this.currentHealth = 0
+        this.rating = 0
     }
     displaySelf(){
         return `Name: ${this.name}<br>Health: ${this.currentHealth}/${this.health}<br>Damage: ${this.damageMin} - ${this.damageMax}<br>
                 Crit Chance: ${this.critChance}%<br>Dodge Chance: ${this.dodgeChance}%<br>
                 Block Amount: ${this.minBlockAmount} - ${this.maxBlockAmount}<br>
                 Block Chance: ${this.blockChance}%<br>Siphon Chance: ${this.siphonChance}%<br>
-                Charge Chance: ${this.chargeChance}%<br>Speed: ${this.speed}`;
+                Charge Chance: ${this.chargeChance}%<br>Speed: ${this.speed}<br><br>Rating: ${this.calcRating()}`;
+    }
+    calcRating(){
+        this.rating = Math.round((((this.health - 75)/25 + 1) + ((this.damageMin - 10)/7 + 1)/2 + ((this.damageMax - 30)/7 + 1)/2 +
+                    ((this.critChance - 25)/15 + 1) + ((this.dodgeChance - 25)/15 + 1) + ((this.minBlockAmount - 10)/7 + 1)/2 +
+                    ((this.maxBlockAmount - 30)/7 + 1)/2 + ((this.blockChance - 25)/15 + 1) + ((this.siphonChance - 10)/7 + 1) +
+                    ((this.chargeChance - 10)/7 + 1) + ((this.speed - 50)/25 + 1)) * 10) / 10
+        return this.rating
     }
 }
 
@@ -632,6 +640,7 @@ let enemyFighter;
 let fighters = [];
 let score = 0;
 
+
 // Buttons
 attackButton.addEventListener('click',() => {
     battle(playerFighter, enemyFighter);
@@ -827,5 +836,15 @@ for (i = 0; i < 2; i++){
     console.log(i + " : " + counts[i]);
 }
 
-*/
 
+
+testingFighters = [];
+for (i = 0; i < 5000; i++){
+    newFighter = normalGen();
+    newFighter.calcRating();
+    testingFighters.push(newFighter);
+}
+testingFighters.sort(function(a, b){return a.rating - b.rating});
+console.log(testingFighters);
+
+*/
