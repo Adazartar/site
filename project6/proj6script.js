@@ -403,7 +403,7 @@ function battle(f1, f2){
             swapButton.style.display = "none";
             catchButton.style.display = "none";
             continueButton.style.display = "initial";
-            logText.innerHTML += `no more fighters left, game over<br>`
+            logText.innerHTML += `no more fighters left, game over<br>your final score was ${score}<br>`
             score = 0;
             scoreText.innerHTML = `score: ${score}`;
             fighters.splice(0,1);
@@ -673,7 +673,7 @@ catchButton.addEventListener('click',() => {
                     swapButton.style.display = "none";
                     catchButton.style.display = "none";
                     continueButton.style.display = "initial";
-                    logText.innerHTML += `no more fighters left, game over`;
+                    logText.innerHTML += `no more fighters left, game over<br>your final score was ${score}<br>`;
                     score = 0;
                     scoreText.innerHTML = `score: ${score}`;
                     fighters.splice(0,1);
